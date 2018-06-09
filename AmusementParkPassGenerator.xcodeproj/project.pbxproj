@@ -12,6 +12,8 @@
 		A95368F320CC4CAC00AAAC19 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A95368F120CC4CAC00AAAC19 /* Main.storyboard */; };
 		A95368F520CC4CAE00AAAC19 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A95368F420CC4CAE00AAAC19 /* Assets.xcassets */; };
 		A95368F820CC4CAE00AAAC19 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A95368F620CC4CAE00AAAC19 /* LaunchScreen.storyboard */; };
+		A953690220CC4CD500AAAC19 /* AccessDenied.wav in Resources */ = {isa = PBXBuildFile; fileRef = A953690020CC4CD500AAAC19 /* AccessDenied.wav */; };
+		A953690320CC4CD500AAAC19 /* AccessGranted.wav in Resources */ = {isa = PBXBuildFile; fileRef = A953690120CC4CD500AAAC19 /* AccessGranted.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		A95368F420CC4CAE00AAAC19 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A95368F720CC4CAE00AAAC19 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A95368F920CC4CAE00AAAC19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A953690020CC4CD500AAAC19 /* AccessDenied.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = AccessDenied.wav; sourceTree = "<group>"; };
+		A953690120CC4CD500AAAC19 /* AccessGranted.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = AccessGranted.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,7 @@
 		A95368EC20CC4CAC00AAAC19 /* AmusementParkPassGenerator */ = {
 			isa = PBXGroup;
 			children = (
+				A95368FF20CC4CBC00AAAC19 /* Sounds */,
 				A95368ED20CC4CAC00AAAC19 /* AppDelegate.swift */,
 				A95368EF20CC4CAC00AAAC19 /* ViewController.swift */,
 				A95368F120CC4CAC00AAAC19 /* Main.storyboard */,
@@ -62,6 +67,15 @@
 				A95368F920CC4CAE00AAAC19 /* Info.plist */,
 			);
 			path = AmusementParkPassGenerator;
+			sourceTree = "<group>";
+		};
+		A95368FF20CC4CBC00AAAC19 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				A953690020CC4CD500AAAC19 /* AccessDenied.wav */,
+				A953690120CC4CD500AAAC19 /* AccessGranted.wav */,
+			);
+			path = Sounds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,8 +137,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				A95368F820CC4CAE00AAAC19 /* LaunchScreen.storyboard in Resources */,
+				A953690320CC4CD500AAAC19 /* AccessGranted.wav in Resources */,
 				A95368F520CC4CAE00AAAC19 /* Assets.xcassets in Resources */,
 				A95368F320CC4CAC00AAAC19 /* Main.storyboard in Resources */,
+				A953690220CC4CD500AAAC19 /* AccessDenied.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
