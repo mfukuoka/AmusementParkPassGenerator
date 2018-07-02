@@ -13,6 +13,23 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+   
+        
+        
+        //register a entrant
+        do {
+            let entrant = try AmusementPark.registerEntrant(EntrantType.guest, EntrantSubType.child, requiredInformation: [RequiredInformation.dob : "2016/01/01"])
+            print("entrant added")
+        }
+        catch RegistrationError.dob {
+            print("You must provide a date of birth.")
+        }
+        catch RegistrationError.dobUnderFiveYears {
+            print("You must be under 5 years old to be a child guest.")
+        }
+        catch {
+            
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -22,4 +39,7 @@ class ViewController: UIViewController {
 
 
 }
+
+
+
 
